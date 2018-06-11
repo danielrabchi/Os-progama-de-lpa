@@ -6,14 +6,14 @@ float delta(float a, float b, float c){
 }
 float bhaskara(float a,float b,float x){
 	int op;
-	printf("\n\nDigite a raiz que voce quer: 1-Raiz da soma , 2-Raiz da subtração ");
+	printf("\n\nDigite a raiz que voce quer: 1-Raiz da soma , 2-Raiz da subtracao ");
 	scanf("%i",&op);
 	switch(op){
 		case 1:
-			(-b+sqrt(x))/(2*a);
+			return (-b+sqrt(x))/(2*a);
 			break;
 		case 2:
-			(-b-sqrt(x))/(2*a);
+			return (-b-sqrt(x))/(2*a);
 			break;
 	}
 }
@@ -26,6 +26,7 @@ void main(void){
 	printf("\n\n Digite o Valor de C: ");
 	scanf("%f",&c);
 	x= delta(a,b,c);
+	printf("%f",x);
 	resultado= bhaskara(a,b,x);
 	printf("O resultado do seu bhaskara e: %0.2f",resultado);
 }

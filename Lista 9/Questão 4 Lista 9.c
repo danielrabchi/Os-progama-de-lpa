@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+// Calculo do fatorial
 int fatorial(int i){
 
 	int resultado=1;

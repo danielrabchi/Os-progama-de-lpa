@@ -22,7 +22,6 @@ int mensagem(void){
 void main(void){
 	int resultado,num;
 	num=mensagem();
-	
 	resultado=fibo(num);
 	printf("O seu valor vai ser %i",resultado);
 	
